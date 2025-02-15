@@ -6,7 +6,7 @@ layout: default
   <header>
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
-      Published on {{ page.date | date: "%B %d, %Y" }}
+      Published on {{ page.date | date_to_rfc822 }}
     </p>
   </header>
   <section class="post-content">
