@@ -138,3 +138,10 @@ a {
 a:hover {
   border-bottom: 1px dashed #33ff00;
 }
+
+/* Custom CSS */
+/* Changing <li><ul> bullet symbol */
+
+ul {
+  list-style-type: "$ ";
+}
