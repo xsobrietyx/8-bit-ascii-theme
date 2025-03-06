@@ -1,0 +1,154 @@
+/* -------------------------------------------------- */
+/*             Monochrome Minimal Theme               */
+/* -------------------------------------------------- */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling: white background with near-black text */
+  body {
+    background-color: #ffffff; /* white background */
+    color: #222222;           /* near-black text for good contrast */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1rem;
+  }
+  
+  /* ASCII banner styling */
+  .ascii-banner {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation */
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .main-nav a {
+    color: #000000; /* black links */
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-bottom 0.2s;
+  }
+  
+  .main-nav a:hover {
+    border-bottom: 1px dashed #000000;
+  }
+  
+  /* Main content area */
+  main {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  /* Headers & text */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000; 
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Posts */
+  .post {
+    margin-bottom: 2rem;
+  }
+  
+  .post-meta {
+    font-size: 0.9em;
+    color: #555555; /* slightly lighter than body text for meta info */
+    margin-bottom: 1rem;
+  }
+  
+  /* -------------------------------------------------- */
+  /*          MARKDOWN-SPECIFIC STYLING                */
+  /* -------------------------------------------------- */
+  
+  /* Paragraph and lists */
+  p,
+  ul,
+  ol {
+    margin-bottom: 1rem;
+  }
+  
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+  
+  /* Blockquotes: subtle borders in grayscale */
+  blockquote {
+    border-left: 3px solid #aaaaaa;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #555555;
+    font-style: italic;
+  }
+  
+  /* Inline code: give a slight background & border */
+  code {
+    background-color: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #333333;
+    border: 1px dashed #cccccc;
+  }
+  
+  /* Code blocks */
+  pre code {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+    color: #333333;
+    border: 1px solid #cccccc;
+  }
+  
+  /* Horizontal rule */
+  hr {
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 2rem 0;
+  }
+  
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%; /* optional for responsive sizing */
+  }
+  
+  th,
+  td {
+    border: 1px dashed #aaaaaa;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  /* Links (reinforce existing link styles for Markdown) */
+  a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+  }
+  
+  a:hover {
+    border-bottom: 1px dashed #000000;
+  }
+  
+  /* Custom bullet symbol for <ul> (optional) */
+  ul {
+    list-style-type: "• ";
+  }
+  
