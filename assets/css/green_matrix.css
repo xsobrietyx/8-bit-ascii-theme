@@ -7,6 +7,14 @@
 
 /* Body styling for that old-terminal feel */
 body {
+  --syntax-comment: #8fba8f;
+  --syntax-keyword: #c5b3ff;
+  --syntax-name: #8bd5ff;
+  --syntax-string: #a6e3a1;
+  --syntax-number: #f9c784;
+  --syntax-error: #ff9d9d;
+  --syntax-error-background: #3d0c0c;
+  --syntax-insert-background: #0b330b;
   background-color: #000000; /* black background */
   color: #33ff00;            /* green text */
   font-family: "Courier New", Courier, monospace;

@@ -11,6 +11,14 @@
   
   /* Body styling: blackish background with neon-lime text */
   body {
+    --syntax-comment: #a4aac4;
+    --syntax-keyword: #c4a7ff;
+    --syntax-name: #8bd5ff;
+    --syntax-string: #a6e3a1;
+    --syntax-number: #ffcc88;
+    --syntax-error: #ff9d9d;
+    --syntax-error-background: #3d0c0c;
+    --syntax-insert-background: #0b330b;
     background-color: #0f0f19; /* near-black with a hint of blue */
     color: #33ffcc;           /* neon aqua/teal text */
     font-family: "Courier New", Courier, monospace;
@@ -149,4 +157,3 @@
   ul {
     list-style-type: "$ ";
   }
-  

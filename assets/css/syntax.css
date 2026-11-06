@@ -1,0 +1,74 @@
+/* Rouge / Pygments tokens. Loaded after the main theme stylesheet.
+ * Light defaults match Monochrome Minimal's #f0f0f0 code background.
+ * Dark theme variants override the --syntax-* variables on body.
+ * Only token spans are styled: inline code and plain text stay unchanged.
+ */
+
+/* Comments and preprocessor directives. */
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm,
+.highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: var(--syntax-comment, #57606a);
+  font-style: italic;
+}
+
+/* Keywords, types, and word operators. */
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn,
+.highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv,
+.highlight .ow {
+  color: var(--syntax-keyword, #6639ba);
+  font-weight: bold;
+}
+
+/* Attributes, builtins, classes, functions, namespaces, and tags. */
+.highlight .na, .highlight .nb, .highlight .bp, .highlight .nc,
+.highlight .no, .highlight .nd, .highlight .ni, .highlight .ne,
+.highlight .nf, .highlight .fm, .highlight .nl, .highlight .nn,
+.highlight .nt {
+  color: var(--syntax-name, #0550ae);
+}
+
+/* Strings, escapes, symbols, and regular expressions. */
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc,
+.highlight .dl, .highlight .sd, .highlight .s2, .highlight .se,
+.highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
+.highlight .s1, .highlight .ss {
+  color: var(--syntax-string, #116329);
+}
+
+/* Numbers and other literal values. */
+.highlight .l, .highlight .ld, .highlight .m, .highlight .mb,
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .il,
+.highlight .mo, .highlight .mx {
+  color: var(--syntax-number, #953800);
+}
+
+.highlight .o {
+  color: var(--syntax-keyword, #6639ba);
+}
+
+/* Generic tokens used by diff, console, and traceback lexers. */
+.highlight .gh, .highlight .gu, .highlight .gp, .highlight .go {
+  color: var(--syntax-comment, #57606a);
+}
+
+.highlight .gh, .highlight .gu, .highlight .gs {
+  font-weight: bold;
+}
+
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gd, .highlight .err {
+  color: var(--syntax-error, #b42318);
+  background-color: var(--syntax-error-background, #ffebe9);
+}
+
+.highlight .gi {
+  color: var(--syntax-string, #116329);
+  background-color: var(--syntax-insert-background, #dafbe1);
+}
+
+.highlight .gr, .highlight .gt {
+  color: var(--syntax-error, #b42318);
+}
