@@ -1,15 +1,12 @@
-<!-- Large ASCII Banner at the top of every page -->
-<div class="ascii-banner">
-    <pre>
-        01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01110011 01100011 01101001 01100101 01101110 01100011 01100101
-    </pre>
-    </div>
-    
-    <nav class="main-nav">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-        <!-- Add more nav links as needed -->
-      </ul>
-    </nav>
-    <hr>
+<header class="site-header">
+  <div class="ascii-banner" aria-hidden="true">
+    <pre>01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01110011 01100011 01101001 01100101 01101110 01100011 01100101</pre>
+  </div>
+  <nav class="main-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}"{% if page.url == '/blog.html' %} aria-current="page"{% elsif page.layout == 'post' %} aria-current="location"{% endif %}>Blog</a></li>
+    </ul>
+  </nav>
+  <hr>
+</header>

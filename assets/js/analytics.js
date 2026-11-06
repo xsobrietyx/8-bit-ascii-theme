@@ -173,7 +173,7 @@
   settings.textContent = 'Analytics settings';
   settings.setAttribute('aria-controls', panel.id);
   settings.setAttribute('aria-expanded', 'false');
-  document.body.appendChild(settings);
+  (document.querySelector('footer') || document.body).appendChild(settings);
 
   const setPanel = visible => {
     panel.hidden = !visible;

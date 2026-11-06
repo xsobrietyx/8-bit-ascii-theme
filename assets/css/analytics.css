@@ -25,6 +25,10 @@
   font-size: 1.1rem;
 }
 
+.analytics-consent p {
+  margin: 0 0 0.75rem;
+}
+
 .analytics-actions {
   display: flex;
   flex-wrap: wrap;
@@ -53,5 +57,5 @@
 
 .analytics-settings {
   display: block;
-  margin: 1rem auto;
+  margin: 0.75rem 0 0;
 }

@@ -8,6 +8,7 @@ A retro Jekyll theme inspired by old-school terminals and BBS ASCII art.
 - Customizable ASCII art banner
 - Minimal, lightweight layouts
 - Build-time syntax highlighting with Rouge, including Cypher and other supported languages
+- Shared responsive spacing, aligned header/footer, and keyboard-scrollable tables
 
 ## Usage
 
@@ -16,6 +17,20 @@ A retro Jekyll theme inspired by old-school terminals and BBS ASCII art.
 3. Open `http://127.0.0.1:4000`
 
 See the runbook for full instructions.
+
+## Layout and spacing
+
+`assets/css/layout.css` loads after the palette stylesheet and keeps the same
+700px reading column, fonts, and colours. It supplies consistent heading,
+paragraph, list, code, and footer spacing for every palette. The decorative
+binary banner wraps between groups on narrow screens; code preserves its
+whitespace and scrolls inside its own block.
+
+The default layout wraps rendered tables in focusable `.table-scroll` regions.
+Wide tables scroll horizontally without making the entire page wider, and can
+be scrolled with the keyboard. Content links are underlined; navigation keeps
+the existing minimal appearance and indicates the current section. The blog
+index omits a publication date because the list is continuously updated.
 
 ## Syntax highlighting
 
