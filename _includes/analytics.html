@@ -1,0 +1,9 @@
+{% assign ga4_id = site.analytics.ga4_measurement_id | default: '' | strip %}
+{% if jekyll.environment == 'production' and ga4_id != '' %}
+<link rel="stylesheet" href="{{ '/assets/css/analytics.css' | relative_url }}">
+<script defer src="{{ '/assets/js/analytics.js' | relative_url }}"
+        data-measurement-id="{{ ga4_id | escape }}"
+        data-domains="{{ site.analytics.domains | default: '' | escape }}"
+        data-privacy-url="{{ '/privacy/' | relative_url }}"
+        data-debug="{{ site.analytics.debug | default: false }}"></script>
+{% endif %}
