@@ -26,6 +26,11 @@ paragraph, list, code, and footer spacing for every palette. The decorative
 binary banner wraps between groups on narrow screens; code preserves its
 whitespace and scrolls inside its own block.
 
+Hover over the binary banner to reveal its decoded text, `computer science`.
+Keyboard focus reveals the same text. Both representations share a grid cell,
+so switching between them preserves the banner's height and surrounding spacing.
+The reveal uses CSS only; assistive technology receives the decoded label.
+
 The default layout wraps rendered tables in focusable `.table-scroll` regions.
 Wide tables scroll horizontally without making the entire page wider, and can
 be scrolled with the keyboard. Content links are underlined; navigation keeps

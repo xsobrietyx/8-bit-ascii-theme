@@ -12,15 +12,37 @@ body {
 }
 
 .ascii-banner {
+  display: grid;
+  align-items: center;
   margin: 0 0 0.75rem;
+  font-family: monospace;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+}
+
+.ascii-banner pre, .ascii-banner-text {
+  grid-area: 1 / 1;
+  margin: 0;
+  font: inherit;
 }
 
 .ascii-banner pre {
-  margin: 0;
+  min-width: 0;
+  width: 100%;
   white-space: pre-wrap;
   overflow-wrap: normal;
-  font-size: 0.6875rem;
-  line-height: 1.5;
+}
+
+.ascii-banner-text {
+  visibility: hidden;
+}
+
+.ascii-banner:is(:hover, :focus-visible) pre {
+  visibility: hidden;
+}
+
+.ascii-banner:is(:hover, :focus-visible) .ascii-banner-text {
+  visibility: visible;
 }
 
 .main-nav ul {
@@ -170,7 +192,7 @@ main a, .site-footer a {
   text-underline-offset: 0.15em;
 }
 
-.main-nav a:focus-visible, .table-scroll:focus-visible {
+.ascii-banner:focus-visible, .main-nav a:focus-visible, .table-scroll:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
